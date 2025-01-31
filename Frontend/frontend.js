@@ -5,7 +5,6 @@ form.addEventListener("submit", (e) => {
   const name = e.target.username.value;
   const email = e.target.email.value;
   const password = e.target.password.value;
-  console.log(name, email, password);
 
   const userInfo = {
     name,
@@ -13,7 +12,7 @@ form.addEventListener("submit", (e) => {
     password,
   };
 
-  fetch("http://localhost:5000/users", {
+  fetch("http://localhost:3500/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
